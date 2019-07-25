@@ -1,5 +1,7 @@
 package com.sun.library.joker.activity;
 
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.sun.library.R;
@@ -24,6 +26,9 @@ public class JokeListActivity extends BaseActivity implements JokeContract.IJoke
     private JokeListPresenter presenter = new JokeListPresenter();
 
     private TextView tv;
+    private Button button;
+
+    private int pageIndex = 1;
 
     @Override
     protected IMvpPresenter[] getPresenterArray() {
@@ -43,12 +48,20 @@ public class JokeListActivity extends BaseActivity implements JokeContract.IJoke
     @Override
     protected void initView() {
         tv = findViewById(R.id.content);
+        button = findViewById(R.id.button);
 
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pageIndex++;
+                presenter.getData("1418816972", "desc", pageIndex, 20);
+            }
+        });
     }
 
     @Override
     protected void initData() {
-        presenter.getData("1418816972", "desc", 1, 20);
+        presenter.getData("1418816972", "desc", pageIndex, 20);
     }
 
     @Override

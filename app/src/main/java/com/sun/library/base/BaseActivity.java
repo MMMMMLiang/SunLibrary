@@ -15,7 +15,7 @@ import com.sun.library.http.mvp.root.IMvpPresenter;
  * 日期：2019/7/25
  * 时间：10:33
  * 说明：
- * 备注：
+ * 备注：设计图尺寸 750*1334
  * =============================+
  */
 public abstract class BaseActivity extends AbstractMvpAppCompatActivity {
