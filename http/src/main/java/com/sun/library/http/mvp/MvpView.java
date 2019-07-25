@@ -35,14 +35,6 @@ public interface MvpView extends IMvpView {
     Activity getActivity();
 
     /**
-     * 展示吐司
-     *
-     * @param msg 吐司文本
-     */
-    @UiThread
-    void showToast(@NonNull String msg);
-
-    /**
      * 显示进度View
      */
     @UiThread
