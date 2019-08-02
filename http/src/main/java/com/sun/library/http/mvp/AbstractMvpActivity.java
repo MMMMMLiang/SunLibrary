@@ -4,12 +4,12 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 
+import com.sun.library.http.lifecycle.components.RxActivity;
 import com.sun.library.http.mvp.delegate.ActivityMvpDelegate;
 import com.sun.library.http.mvp.delegate.ActivityMvpDelegateImpl;
 import com.sun.library.http.mvp.delegate.MvpDelegateCallback;
 import com.sun.library.http.mvp.root.IMvpPresenter;
 import com.sun.library.http.mvp.root.IMvpView;
-import com.trello.rxlifecycle3.components.RxActivity;
 
 /**
  * =============================+

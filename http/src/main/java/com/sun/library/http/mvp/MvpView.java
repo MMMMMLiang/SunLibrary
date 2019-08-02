@@ -2,11 +2,10 @@ package com.sun.library.http.mvp;
 
 import android.app.Activity;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.UiThread;
 
+import com.sun.library.http.lifecycle.LifecycleProvider;
 import com.sun.library.http.mvp.root.IMvpView;
-import com.trello.rxlifecycle3.LifecycleProvider;
 
 /**
  * =============================+

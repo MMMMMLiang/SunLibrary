@@ -33,9 +33,7 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
 
-    /*RxLifecycle基础库*/
-    api 'com.trello.rxlifecycle3:rxlifecycle:3.0.0'
-    api 'com.trello.rxlifecycle3:rxlifecycle-components:3.0.0'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
     /*网络请求框架*/
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
@@ -53,7 +51,7 @@ publish {
     repoName = 'SunLibrary'
     groupId = 'com.sun.library'
     artifactId = 'http'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'this is a android base lib'
     website = 'https://github.com/MMMMMLiang/SunLib'
 }

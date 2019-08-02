@@ -7,12 +7,12 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.sun.library.http.lifecycle.components.support.RxFragment;
 import com.sun.library.http.mvp.delegate.FragmentMvpDelegate;
 import com.sun.library.http.mvp.delegate.FragmentMvpDelegateImpl;
 import com.sun.library.http.mvp.delegate.MvpDelegateCallback;
 import com.sun.library.http.mvp.root.IMvpPresenter;
 import com.sun.library.http.mvp.root.IMvpView;
-import com.trello.rxlifecycle3.components.support.RxFragment;
 
 /**
  * =============================+
