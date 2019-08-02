@@ -7,10 +7,10 @@ import com.google.gson.JsonElement;
 import com.sun.library.base.BizFactory;
 import com.sun.library.base.callback.BaseHttpCallback;
 import com.sun.library.bean.ResultData;
+import com.sun.library.http.lifecycle.LifecycleProvider;
 import com.sun.library.http.mvp.model.ModelCallback;
 import com.sun.library.joker.biz.JokeBiz;
 import com.sun.library.joker.contract.JokeContract;
-import com.trello.rxlifecycle3.LifecycleProvider;
 
 /**
  * =============================+

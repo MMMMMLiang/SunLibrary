@@ -1,11 +1,11 @@
 package com.sun.library.http.net.observer;
 
 import com.google.gson.JsonElement;
+import com.sun.library.http.lifecycle.LifecycleProvider;
+import com.sun.library.http.lifecycle.android.ActivityEvent;
+import com.sun.library.http.lifecycle.android.FragmentEvent;
 import com.sun.library.http.net.function.HttpResultFunction;
 import com.sun.library.http.net.function.ServerResultFunction;
-import com.trello.rxlifecycle3.LifecycleProvider;
-import com.trello.rxlifecycle3.android.ActivityEvent;
-import com.trello.rxlifecycle3.android.FragmentEvent;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

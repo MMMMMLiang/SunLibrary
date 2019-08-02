@@ -2,14 +2,11 @@ package com.sun.library.joker.contract;
 
 import android.content.Context;
 
-import com.sun.library.bean.JokeData;
 import com.sun.library.bean.ResultData;
+import com.sun.library.http.lifecycle.LifecycleProvider;
 import com.sun.library.http.mvp.MvpView;
 import com.sun.library.http.mvp.model.ModelCallback;
 import com.sun.library.http.mvp.root.IMvpModel;
-import com.trello.rxlifecycle3.LifecycleProvider;
-
-import java.util.List;
 
 /**
  * =============================+

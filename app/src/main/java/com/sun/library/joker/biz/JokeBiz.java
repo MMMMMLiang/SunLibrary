@@ -2,9 +2,9 @@ package com.sun.library.joker.biz;
 
 import com.sun.library.base.BaseBiz;
 import com.sun.library.contants.UrlContants;
+import com.sun.library.http.lifecycle.LifecycleProvider;
 import com.sun.library.http.net.SunHttp;
 import com.sun.library.http.net.callback.AbstractHttpCallback;
-import com.trello.rxlifecycle3.LifecycleProvider;
 
 import java.util.TreeMap;
 

@@ -7,10 +7,10 @@ import android.widget.TextView;
 import com.sun.library.R;
 import com.sun.library.base.BaseActivity;
 import com.sun.library.bean.ResultData;
+import com.sun.library.http.lifecycle.LifecycleProvider;
 import com.sun.library.http.mvp.root.IMvpPresenter;
 import com.sun.library.joker.contract.JokeContract;
 import com.sun.library.joker.presenter.JokeListPresenter;
-import com.trello.rxlifecycle3.LifecycleProvider;
 
 /**
  * =============================+

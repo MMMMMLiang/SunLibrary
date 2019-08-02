@@ -6,6 +6,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 
+import com.sun.library.http.lifecycle.LifecycleProvider;
+import com.sun.library.http.lifecycle.android.ActivityEvent;
+import com.sun.library.http.lifecycle.android.FragmentEvent;
 import com.sun.library.http.net.api.Api;
 import com.sun.library.http.net.callback.AbstractHttpCallback;
 import com.sun.library.http.net.callback.AbstractUploadCallback;
@@ -15,9 +18,6 @@ import com.sun.library.http.net.observer.HttpObservable;
 import com.sun.library.http.net.retrofit.Method;
 import com.sun.library.http.net.retrofit.RetrofitUtils;
 import com.sun.library.http.net.utils.RequestUtils;
-import com.trello.rxlifecycle3.LifecycleProvider;
-import com.trello.rxlifecycle3.android.ActivityEvent;
-import com.trello.rxlifecycle3.android.FragmentEvent;
 
 import java.io.File;
 import java.util.ArrayList;
