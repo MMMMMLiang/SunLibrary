@@ -14,7 +14,6 @@
 
 package com.sun.library.http.lifecycle;
 
-import com.trello.rxlifecycle3.LifecycleTransformer;
 
 import javax.annotation.CheckReturnValue;
 import javax.annotation.Nonnull;

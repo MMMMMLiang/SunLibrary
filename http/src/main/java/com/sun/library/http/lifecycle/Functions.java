@@ -14,7 +14,6 @@
 
 package com.sun.library.http.lifecycle;
 
-import com.trello.rxlifecycle3.OutsideLifecycleException;
 
 import java.util.concurrent.CancellationException;
 

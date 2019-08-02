@@ -19,16 +19,16 @@ import android.view.View;
 import androidx.annotation.CheckResult;
 import androidx.annotation.NonNull;
 
-import com.trello.rxlifecycle3.LifecycleTransformer;
-import com.trello.rxlifecycle3.OutsideLifecycleException;
-import com.trello.rxlifecycle3.android.ActivityEvent;
-import com.trello.rxlifecycle3.android.FragmentEvent;
+
+import com.sun.library.http.lifecycle.LifecycleTransformer;
+import com.sun.library.http.lifecycle.OutsideLifecycleException;
 
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 
-import static com.trello.rxlifecycle3.RxLifecycle.bind;
-import static com.trello.rxlifecycle3.internal.Preconditions.checkNotNull;
+import static com.sun.library.http.lifecycle.RxLifecycle.bind;
+import static com.sun.library.http.lifecycle.internal.Preconditions.checkNotNull;
+
 
 public class RxLifecycleAndroid {
 
@@ -101,16 +101,16 @@ public class RxLifecycleAndroid {
     private static final Function<ActivityEvent, ActivityEvent> ACTIVITY_LIFECYCLE =
         new Function<ActivityEvent, ActivityEvent>() {
             @Override
-            public com.trello.rxlifecycle3.android.ActivityEvent apply(com.trello.rxlifecycle3.android.ActivityEvent lastEvent) throws Exception {
+            public ActivityEvent apply(ActivityEvent lastEvent) throws Exception {
                 switch (lastEvent) {
                     case CREATE:
-                        return com.trello.rxlifecycle3.android.ActivityEvent.DESTROY;
+                        return ActivityEvent.DESTROY;
                     case START:
-                        return com.trello.rxlifecycle3.android.ActivityEvent.STOP;
+                        return ActivityEvent.STOP;
                     case RESUME:
-                        return com.trello.rxlifecycle3.android.ActivityEvent.PAUSE;
+                        return ActivityEvent.PAUSE;
                     case PAUSE:
-                        return com.trello.rxlifecycle3.android.ActivityEvent.STOP;
+                        return ActivityEvent.STOP;
                     case STOP:
                         return ActivityEvent.DESTROY;
                     case DESTROY:
@@ -125,24 +125,24 @@ public class RxLifecycleAndroid {
     private static final Function<FragmentEvent, FragmentEvent> FRAGMENT_LIFECYCLE =
         new Function<FragmentEvent, FragmentEvent>() {
             @Override
-            public com.trello.rxlifecycle3.android.FragmentEvent apply(com.trello.rxlifecycle3.android.FragmentEvent lastEvent) throws Exception {
+            public FragmentEvent apply(FragmentEvent lastEvent) throws Exception {
                 switch (lastEvent) {
                     case ATTACH:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.DETACH;
+                        return FragmentEvent.DETACH;
                     case CREATE:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.DESTROY;
+                        return FragmentEvent.DESTROY;
                     case CREATE_VIEW:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.DESTROY_VIEW;
+                        return FragmentEvent.DESTROY_VIEW;
                     case START:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.STOP;
+                        return FragmentEvent.STOP;
                     case RESUME:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.PAUSE;
+                        return FragmentEvent.PAUSE;
                     case PAUSE:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.STOP;
+                        return FragmentEvent.STOP;
                     case STOP:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.DESTROY_VIEW;
+                        return FragmentEvent.DESTROY_VIEW;
                     case DESTROY_VIEW:
-                        return com.trello.rxlifecycle3.android.FragmentEvent.DESTROY;
+                        return FragmentEvent.DESTROY;
                     case DESTROY:
                         return FragmentEvent.DETACH;
                     case DETACH:

@@ -22,11 +22,12 @@ import androidx.annotation.CheckResult;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.trello.rxlifecycle3.LifecycleProvider;
-import com.trello.rxlifecycle3.LifecycleTransformer;
-import com.trello.rxlifecycle3.RxLifecycle;
-import com.trello.rxlifecycle3.android.ActivityEvent;
-import com.trello.rxlifecycle3.android.RxLifecycleAndroid;
+
+import com.sun.library.http.lifecycle.LifecycleProvider;
+import com.sun.library.http.lifecycle.LifecycleTransformer;
+import com.sun.library.http.lifecycle.RxLifecycle;
+import com.sun.library.http.lifecycle.android.ActivityEvent;
+import com.sun.library.http.lifecycle.android.RxLifecycleAndroid;
 
 import io.reactivex.Observable;
 import io.reactivex.subjects.BehaviorSubject;

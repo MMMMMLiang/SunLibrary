@@ -35,7 +35,8 @@ import io.reactivex.Single;
 import io.reactivex.SingleSource;
 import io.reactivex.SingleTransformer;
 
-import static com.trello.rxlifecycle3.internal.Preconditions.checkNotNull;
+import static com.sun.library.http.lifecycle.internal.Preconditions.checkNotNull;
+
 
 /**
  * Transformer that continues a subscription until a second Observable emits an event.

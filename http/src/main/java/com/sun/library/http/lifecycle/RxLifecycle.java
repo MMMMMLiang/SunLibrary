@@ -14,7 +14,6 @@
 
 package com.sun.library.http.lifecycle;
 
-import com.trello.rxlifecycle3.LifecycleTransformer;
 
 import javax.annotation.CheckReturnValue;
 import javax.annotation.Nonnull;
@@ -24,7 +23,8 @@ import io.reactivex.functions.BiFunction;
 import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 
-import static com.trello.rxlifecycle3.internal.Preconditions.checkNotNull;
+import static com.sun.library.http.lifecycle.internal.Preconditions.checkNotNull;
+
 
 public class RxLifecycle {
 
